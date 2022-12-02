@@ -159,9 +159,6 @@ def get_detections_by_image_files():
 
 
 
-
-
-
 # *********************************************************************test*****************************
 # API that returns image with detections on it from url
 @app.route('/image/by-url', methods=['POST'])
@@ -379,7 +376,7 @@ def get_image_by_image_file():
   except FileNotFoundError:
     abort(404)
 
-#*************************************test2****************************
+#*************************************Main function****************************
 # API that returns image with detections on it
 @app.route('/image/by-application', methods=['POST'])
 def get_image_by_application():
